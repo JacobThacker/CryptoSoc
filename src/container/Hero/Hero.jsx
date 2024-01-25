@@ -12,7 +12,7 @@ const Hero = () => {
     <div className="hero">
       <div className="row align-items-center">
         <div className="col-md-6 col-12">
-          <h1 className="title"> Freedom and Transparency in Every Transaction  </h1>
+          <h1 className="title"> Freedom and Sovereignty in Every Transaction  </h1>
           <p className="py-4">Born too late to explore the seas, born to early to explore the stars, born just in time to witness the rise of the cryptocurrency revolution.</p>
           <a href="https://www.google.com">
           <button className="btn-positivus">Join the club</button>
