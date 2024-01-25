@@ -32,12 +32,13 @@ jobs:
       - run: npm ci
       - run: CI= npm run build
 
-      - name: Build and Deploy
+    Deploy:
+      - name: Deploy
       env:
         NODE_ENV: production
         # This is set automatically by github
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: | 
+      run:
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/JacobThacker/CryptoSoc.git
