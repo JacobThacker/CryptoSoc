@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="col-md-4 col-12">
           <ul className="info-contact">
             <li> <span>Contact us:</span></li>
-            <li>Email: info@positivus.com</li>
+            <li>Email: info@.com</li>
             <li>Phone: 555-567-8901</li>
             <li>Address: 1234 Main St
               Moonstone City, Stardust State 12345</li>
