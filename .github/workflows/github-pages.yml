@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          persist-credentials: false
 
       - name: Use Node 14
         uses: actions/setup-node@v1
@@ -25,14 +23,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Configure Git
-        run: |
-          git config user.name "Automated"
-          git config user.email "actions@users.noreply.github.com"
-          git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/JacobThacker/CryptoSoc.git
-
       - name: Deploy to GitHub Pages
         env:
           NODE_ENV: production
         run: |
-          npx gh-pages -d build -t true
+          npx gh-pages -d build -b gh-pages -t true
